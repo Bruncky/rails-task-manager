@@ -1,5 +1,5 @@
 <div class="container">
     <h1><%= @task.title %></h1>
     <p><%= @task.details %></p>
-    <a class="btn btn-primary" href="tasks/id/edit" role="button">Edit Task</a>
+    <a class="btn btn-primary" href="<%= task_path(@task.id) %>/edit" role="button">Edit Task</a>
 </div>

@@ -1,12 +1,11 @@
-
 <div class="container">
     <h1>My Tasks</h1>
     <ul>
         <% @tasks.each do |task| %>
             <% if task.completed == true %>
-                    <li><input type="checkbox" checked><%= link_to task.title, task_path(task) %></li>
+                    <li><input type="checkbox" checked><%= link_to task.title, task_path(task) %> &#183 <a href="<%= task_path(task) %>" method="delete"><i class="fas fa-trash-alt"></i></a></li>
             <% else %>
-                    <li><input type="checkbox"><%= link_to task.title, task_path(task) %></li>
+                    <li><input type="checkbox"><%= link_to task.title, task_path(task) %> &#183 <a href="<%= task_path(task) %>" method="delete"><i class="fas fa-trash-alt"></i></a></li>
             <% end %>
         <% end %>
     </ul>
