@@ -14,5 +14,6 @@
         <%= form.check_box :completed, id: "task-completed", class: "form-check-input" %>
         <label class="form-check-label" for="task-completed">Completed?</label>
     </div>
-    <%= form.submit "Add Task", class: "btn btn-primary" %>
+    <a class="btn btn-danger" href="http://localhost:3000/tasks" role="button">Back to Task List</a>
+    <%= form.submit "Add Task", class: "btn btn-success" %>
 <% end %>
