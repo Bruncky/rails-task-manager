@@ -19,4 +19,17 @@ ul {
 a {
   color: white;
   text-decoration: none;
+
+  &:hover {
+    color: #0068D9;
+    text-decoration: none;
+  }
+}
+
+#task-description {
+  margin-top: 5px;
+}
+
+.container {
+  width: 40%;
 }
