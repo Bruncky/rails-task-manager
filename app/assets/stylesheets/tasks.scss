@@ -15,6 +15,16 @@ list-container {
 ul {
   list-style: none;
   padding: 0;
+
+  li {
+    input {
+      margin-right: 4px;
+    }
+
+    a {
+      vertical-align: middle;
+    }
+  }
 }
 
 a {
